@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_BBBBBB"
+    android:orientation="vertical"
+    tools:context=".check.day.DayCheckActivity">
+
+    <include layout="@layout/toolbar_public"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/check_date_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:id="@+id/check_day_date_tv"
+                style="@style/check_day_tv_style"
+                android:text="日期："></TextView>
+
+            <TextView
+                android:id="@+id/check_day_picker_tv"
+                style="@style/check_day_date_picker_tv_style"
+                android:text="请选择日期"></TextView>
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/check_day_recyclerview"
+            style="@style/check_day_rl_style"></androidx.recyclerview.widget.RecyclerView>
+        <FrameLayout
+            android:id="@+id/check_fl"
+            style="@style/check_day_rl_style">
+
+            <com.squareup.timessquare.CalendarPickerView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <RadioGroup
+            android:id="@+id/check_day_rg"
+            style="@style/check_day_rg_style">
+
+            <RadioButton
+                android:id="@+id/check_index_day"
+                style="@style/check_day_rb_style"
+                android:text="@string/check_confirm"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/check_index_total"
+                style="@style/check_day_rb_style"
+                android:text="@string/check_abnormal"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

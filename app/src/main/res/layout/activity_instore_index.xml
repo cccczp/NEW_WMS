@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_BBBBBB"
+    android:orientation="vertical"
+    tools:context=".instore.index.InstoreIndexActivity">
+
+    <include layout="@layout/toolbar_public"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_instore_index_recyclerview"
+            android:layout_above="@+id/activity_instore_index_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+        <RadioGroup
+            android:id="@+id/activity_instore_index_rg"
+            android:layout_alignParentBottom="true"
+            style="@style/public_index_rg_style">
+            <RadioButton
+                android:id="@+id/instore_index_location"
+                style="@style/instore_index_rb_style"
+                android:text="@string/instore_index_location"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/instore_index_tray"
+                style="@style/instore_index_rb_style"
+                android:text="@string/instore_index_tray"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/instore_index_materialBarcde"
+                style="@style/instore_index_rb_style"
+                android:text="@string/instore_index_materialBarcode"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

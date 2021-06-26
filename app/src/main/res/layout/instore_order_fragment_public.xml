@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_asn_tv"
+        style="@style/instore_order_public_tv_style"
+        android:text="@string/instore_order_no_tv"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_asn_tv_demo"
+        style="@style/instore_order_public_tv_style"
+        android:layout_toRightOf="@+id/instore_order_fragment_head_asn_tv"
+        android:gravity="center"
+        android:text="@string/instore_order_no_tv_demo"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_carid_tv"
+        style="@style/instore_order_public_tv_style"
+        android:layout_below="@+id/instore_order_fragment_head_asn_tv"
+        android:layout_toLeftOf="@+id/instore_order_fragment_head_asn_tv_demo"
+        android:text="@string/instore_car_id"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_carid_tv_demo"
+        style="@style/instore_order_public_et_style"
+        android:layout_below="@+id/instore_order_fragment_head_asn_tv"
+        android:layout_toRightOf="@+id/instore_order_fragment_head_carid_tv"
+        android:text="@string/instore_car_id_demo"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_shipper_tv"
+        style="@style/instore_order_public_tv_style"
+        android:layout_below="@+id/instore_order_fragment_head_asn_tv"
+        android:layout_toLeftOf="@+id/instore_order_fragment_head_shipper_tv_demo"
+        android:text="@string/instore_shipper"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_shipper_tv_demo"
+        style="@style/instore_order_public_et_style"
+        android:layout_below="@+id/instore_order_fragment_head_asn_tv"
+        android:layout_alignParentRight="true"
+        android:text="@string/instore_shipper_demo"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_country_tv"
+        style="@style/instore_order_public_tv_style"
+        android:layout_below="@+id/instore_order_fragment_head_carid_tv"
+        android:layout_toLeftOf="@+id/instore_order_fragment_head_carid_tv_demo"
+        android:text="@string/instore_country"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_country_tv_demo"
+        style="@style/instore_order_public_et_style"
+        android:layout_below="@+id/instore_order_fragment_head_carid_tv"
+        android:layout_toRightOf="@+id/instore_order_fragment_head_country_tv"
+        android:text="@string/instore_country_demo"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_count_tv"
+        style="@style/instore_order_public_tv_style"
+        android:layout_below="@+id/instore_order_fragment_head_carid_tv"
+        android:layout_toLeftOf="@+id/instore_order_fragment_head_count_tv_demo"
+        android:text="@string/instore_total_count"></TextView>
+
+    <TextView
+        android:id="@+id/instore_order_fragment_head_count_tv_demo"
+        style="@style/instore_order_public_et_style"
+        android:layout_below="@+id/instore_order_fragment_head_carid_tv"
+        android:layout_toRightOf="@+id/instore_order_fragment_head_shipper_tv"
+        android:text="@string/instore_total_count_demo"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/instore_order_fragment_head_count_tv_demo"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

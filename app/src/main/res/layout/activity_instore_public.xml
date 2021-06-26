@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_background_BBBBBB"
+    android:orientation="vertical"
+    tools:context=".instore.instoreView.InstoreActivity">
+
+
+    <include layout="@layout/toolbar_public"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/instore_public_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/instore_public_tv"></TextView>
+
+            <EditText
+                android:id="@+id/instore_public_et"
+                style="@style/instore_public_tv_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/instore_public_et"
+                android:drawableRight="@mipmap/scan"
+                android:hint="@string/instore_et_hint"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/instore_public_rb_left"
+                    style="@style/instore_public_rb_style"
+                    android:text="@string/instore_public_rb_left"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/instore_public_rb_right"
+                    style="@style/instore_public_rb_style"
+                    android:text="@string/instore_public_rb_right"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/instore_public_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

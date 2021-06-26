@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Integer.valueOf(compile_sdk_version)
+    buildToolsVersion build_tools_version
+    defaultConfig {
+        applicationId "com.zorax.wms"
+        minSdkVersion Integer.valueOf(min_sdk_version)
+        targetSdkVersion Integer.valueOf(target_sdk_version)
+        versionCode Integer.valueOf(version_code)
+        versionName version_name
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+
+    allprojects {
+        repositories {
+//            maven { url 'https://www.jitpack.io' }
+            maven { url 'https://jitpack.io' }
+    }
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'com.github.huangyanbin:SmartTable:2.0'
+    implementation project(path: ':mvp')
+    implementation project(path: ':http')
+    implementation project(path: ':task')
+    implementation 'com.squareup:android-times-square:1.6.5@aar'
+//    implementation 'com.github.prolificinteractive:material-calendarview:1.6.0'
+//    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+//    compile 'com.github.codbking:CalendarExaple:v1.0.0'
+    // https://mvnrepository.com/artifact/com.wdullaer/materialdatetimepicker
+    implementation group: 'com.wdullaer', name: 'materialdatetimepicker', version: '4.2.3'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+}

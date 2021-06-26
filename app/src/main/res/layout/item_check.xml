@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/index_rb">
+
+        <TextView
+            android:id="@+id/item_check_location"
+            style="@style/item_instore_location_rl_tv"
+            android:text="@string/check_location"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_location_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_toRightOf="@+id/item_check_location"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/item_instore_location_code_demo"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_tray"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_toRightOf="@+id/item_check_singlematerialnum_demo"
+            android:text="@string/check_tray"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_tray_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_toRightOf="@+id/item_check_tray"
+            android:text="@string/tray_demo"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_singlematerialnum"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_location"
+            android:text="@string/instore_order_singleMaterialNum"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_singlematerialnum_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_location_demo"
+            android:layout_toRightOf="@+id/item_check_singlematerialnum"
+            android:text="@string/instore_order_singleMaterialNum_demo"></TextView>
+        <TextView
+            android:id="@+id/item_check_single_product_type"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_singlematerialnum"
+            android:text="@string/instore_order_singleProductType"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_single_product_type_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_singlematerialnum_demo"
+            android:layout_toRightOf="@+id/item_check_single_product_type"
+            android:text="@string/instore_order_singleProductType_demo"></TextView>
+        <TextView
+            android:id="@+id/item_check_instore_qty"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_single_product_type"
+            android:text="@string/item_instore_order_instore_qty"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_instore_qty_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_single_product_type_demo"
+            android:layout_toRightOf="@+id/item_check_instore_qty"
+            android:text="@string/instore_total_count_demo"></TextView>
+        <TextView
+            android:id="@+id/item_check_outstore_qty"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_single_product_type"
+            android:layout_toRightOf="@+id/item_check_singlematerialnum_demo"
+            android:text="@string/item_outstore_count"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_outstore_qty_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_single_product_type_demo"
+            android:layout_toRightOf="@+id/item_check_outstore_qty"
+            android:text="@string/instore_total_count_demo"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_inventory_qty"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_outstore_qty"
+            android:layout_toRightOf="@+id/item_instore_fragment_materialNum_demo"
+            android:text="@string/item_check_inventory_qty"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_inventory_qty_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_outstore_qty"
+            android:layout_toRightOf="@+id/item_check_inventory_qty"
+            android:text="@string/instore_total_count_demo"></TextView>
+
+        <TextView
+            android:id="@+id/item_check_actual_qty"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_below="@+id/item_check_outstore_qty"
+            android:layout_toRightOf="@+id/item_check_singlematerialnum_demo"
+            android:text="@string/item_check_actual_qty"></TextView>
+
+        <EditText
+            android:id="@+id/item_check_actual_qty_demo"
+            style="@style/item_instore_location_rl_tv"
+            android:layout_width="@dimen/dp_50"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/item_check_outstore_qty"
+            android:layout_toRightOf="@+id/item_check_actual_qty"
+            android:background="@drawable/index_rb"
+            android:gravity="center"
+            android:text="@string/instore_total_count_demo"></EditText>
+    </RelativeLayout>
+</RelativeLayout>

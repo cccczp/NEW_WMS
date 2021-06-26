@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".check.CheckIndexActivity">
+
+    <include layout="@layout/toolbar_public"></include>
+
+    <RadioGroup style="@style/public_index_rg_style">
+
+        <RadioButton
+            android:id="@+id/check_index_day"
+            style="@style/instore_index_rb_style"
+            android:drawableTop="@mipmap/daycheck"
+            android:text="@string/check_index_day"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/check_index_total"
+            style="@style/instore_index_rb_style"
+            android:drawableTop="@mipmap/checktotal"
+            android:text="@string/check_index_total"></RadioButton>
+    </RadioGroup>
+</LinearLayout>

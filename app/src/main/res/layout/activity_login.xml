@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/loginbackground"
+        android:scaleType="centerCrop"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/login_username_left"></ImageButton>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/login_username_et"
+            style="@style/login_tx_style"
+            android:hint="@string/password_tips"
+            android:inputType="textPassword"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/login_pwd_ib"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/login_password_left_hide"></ImageButton>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/login_pwd_et"
+            style="@style/login_tx_style"
+            android:hint="@string/password_tips"
+            android:inputType="textPassword"></EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:text="@string/login"
+        style="@style/login_bt_style"></Button>
+</LinearLayout>

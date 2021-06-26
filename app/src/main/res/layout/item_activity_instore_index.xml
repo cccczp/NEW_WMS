@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_5">
+
+    <RelativeLayout
+        android:id="@+id/item_instore_index_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_instore_index_rl"
+        android:padding="@dimen/dp_2">
+
+        <RelativeLayout
+            android:id="@+id/item_instore_index_head_rl"
+            style="@style/item_activity_instore_index_rl_style"
+            android:background="@drawable/item_instore_index_head_rl"
+            android:padding="@dimen/dp_2">
+
+            <TextView
+                android:id="@+id/item_instore_index_head_tv_left"
+                style="@style/item_activity_instore_index_tv_style"
+                android:text="@string/tray_demo"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_index_head_tv_right"
+                style="@style/item_activity_instore_index_tv_style"
+                android:layout_alignParentRight="true"
+                android:text="@string/tray_demo"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_instore_index_second_rl"
+            style="@style/item_activity_instore_index_rl_style"
+            android:layout_below="@+id/item_instore_index_head_rl">
+
+            <TextView
+                android:id="@+id/item_instore_index_asn_tv_left"
+                style="@style/item_activity_instore_index_tv_style"
+                android:text="@string/tray_demo"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_index_asn_tv_right"
+                style="@style/item_activity_instore_index_tv_style"
+                android:layout_alignParentRight="true"
+                android:text="@string/tray_demo"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_instore_index_third_rl"
+            style="@style/item_activity_instore_index_rl_style"
+            android:layout_below="@+id/item_instore_index_second_rl">
+
+            <TextView
+                android:id="@+id/item_instore_index_order_type_tv_left"
+                style="@style/item_activity_instore_index_tv_style"
+                android:text="@string/tray_demo"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_index_order_type_tv_right"
+                style="@style/item_activity_instore_index_tv_style"
+                android:layout_alignParentRight="true"
+                android:text="@string/tray_demo"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_instore_index_fourth_rl"
+            style="@style/item_activity_instore_index_rl_style"
+            android:layout_below="@+id/item_instore_index_third_rl">
+
+            <TextView
+                android:id="@+id/item_instore_index_order_date_tv_left"
+                style="@style/item_activity_instore_index_tv_style"
+                android:text="@string/tray_demo"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_index_order_date_tv_right"
+                style="@style/item_activity_instore_index_tv_style"
+                android:layout_alignParentRight="true"
+                android:text="@string/tray_demo"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_instore_index_fifth_rl"
+            style="@style/item_activity_instore_index_rl_style"
+            android:layout_below="@+id/item_instore_index_fourth_rl">
+
+            <TextView
+                android:id="@+id/item_instore_index_shipper_tv_left"
+                style="@style/item_activity_instore_index_tv_style"
+                android:text="@string/tray_demo"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_index_shipper_tv_right"
+                style="@style/item_activity_instore_index_tv_style"
+                android:layout_alignParentRight="true"
+                android:text="@string/tray_demo"></TextView>
+
+            <ImageView
+                android:id="@+id/item_instore_index_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/checked"></ImageView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

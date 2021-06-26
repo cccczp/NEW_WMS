@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_BBBBBB"
+    android:orientation="vertical"
+    tools:context=".index.IndexActivity">
+
+    <androidx.appcompat.widget.Toolbar style="@style/ClubToolbar">
+
+        <TextView
+            style="@style/toolbar_ll_tv_style"
+            android:text="@string/index_label"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout style="@style/index_rl_style">
+
+        <RadioGroup style="@style/index_rg_style">
+
+            <RadioButton
+                android:id="@+id/index_rb_instore"
+                style="@style/index_rb_style"
+                android:drawableTop="@mipmap/instore"
+                android:text="@string/index_instore"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/index_rb_outstore"
+                style="@style/index_rb_style"
+                android:drawableTop="@mipmap/outstore"
+                android:text="@string/index_outstore"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/index_rl_style">
+
+        <RadioGroup style="@style/index_rg_style">
+
+            <RadioButton
+                android:id="@+id/index_rb_check"
+                style="@style/index_rb_style"
+                android:drawableTop="@mipmap/check"
+                android:text="@string/index_check"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/index_rb_prepare"
+                style="@style/index_rb_style"
+                android:drawableTop="@mipmap/prepare"
+                android:text="@string/index_prepare"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/index_rl_style">
+
+        <RadioGroup style="@style/index_rg_style">
+
+            <RadioButton
+                android:id="@+id/index_rb_sales_return"
+                style="@style/index_rb_style"
+                android:drawableTop="@mipmap/salesreturn"
+                android:text="@string/index_sales_return"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/index_rb_setting"
+                style="@style/index_rb_style"
+                android:drawableTop="@mipmap/setting"
+                android:text="@string/index_setting"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

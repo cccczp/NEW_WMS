@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_5">
+
+        <RelativeLayout
+            android:id="@+id/item_instore_order_fragment_first_rl"
+            style="@style/instore_order_ll_style">
+            <TextView
+                android:id="@+id/item_instore_order_fragment_singlematerialnum_tv"
+                style="@style/item_instore_order_public_tv_style"
+                android:text="@string/instore_order_singleMaterialNum"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_order_fragment_singlematerialnum_tv_demo"
+                style="@style/item_instore_order_public_tv_style"
+                android:layout_toRightOf="@+id/item_instore_order_fragment_singlematerialnum_tv"
+                android:text="@string/instore_order_singleMaterialNum_demo"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_instore_order_fragment_second_rl"
+            android:layout_below="@+id/item_instore_order_fragment_first_rl"
+            style="@style/instore_order_ll_style">
+            <TextView
+                android:id="@+id/item_instore_order_fragment_singleproducttype_tv"
+                style="@style/item_instore_order_public_tv_style"
+                android:text="@string/instore_order_singleProductType"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_order_fragment_singleproducttype_tv_demo"
+                android:layout_toRightOf="@+id/item_instore_order_fragment_singleproducttype_tv"
+                style="@style/item_instore_order_public_tv_style"
+                android:text="@string/instore_order_singleProductType_demo"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_instore_order_fragment_third_rl"
+            android:layout_below="@+id/item_instore_order_fragment_second_rl"
+            style="@style/instore_order_ll_style">
+            <TextView
+                android:id="@+id/item_instore_order_fragment_quantity_tv"
+                style="@style/item_instore_order_public_tv_style"
+                android:text="@string/instore_count"></TextView>
+
+            <TextView
+                android:id="@+id/item_instore_order_fragment_quantity_tv_demo"
+                android:layout_toRightOf="@+id/item_instore_order_fragment_quantity_tv"
+                style="@style/item_instore_order_public_tv_style"
+                android:text="@string/instore_total_count_demo"></TextView>
+        </RelativeLayout>
+</RelativeLayout>

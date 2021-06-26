@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ccccc"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_public"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/setting_address_rl"
+            style="@style/setting_rl_style">
+
+            <ImageView
+                android:id="@+id/setting_address_iv"
+                style="@style/setting_iv_style"
+                android:src="@mipmap/address"></ImageView>
+
+            <TextView
+                android:id="@+id/setting_address_tv"
+                style="@style/setting_tv_style"
+                android:layout_toRightOf="@+id/setting_address_iv"
+                android:text="@string/setting_address"></TextView>
+
+            <Button
+                android:id="@+id/setting_address_et"
+                style="@style/setting_bt_style"
+                android:layout_toRightOf="@+id/setting_address_tv"
+                android:drawableRight="@mipmap/toright"
+                android:text="@string/setting_address_tips"></Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_version_rl"
+            style="@style/setting_rl_style"
+            android:layout_below="@+id/setting_address_rl">
+
+            <ImageView
+                android:id="@+id/setting_version_iv"
+                style="@style/setting_iv_style"
+                android:src="@mipmap/version"></ImageView>
+
+            <TextView
+                android:id="@+id/setting_version_tv"
+                style="@style/setting_tv_style"
+                android:layout_toRightOf="@+id/setting_version_iv"
+                android:text="@string/setting_version"></TextView>
+
+            <Button
+                android:id="@+id/setting_version_et"
+                style="@style/setting_bt_style"
+                android:layout_toRightOf="@+id/setting_version_tv"
+                android:text="@string/setting_version"></Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_about_rl"
+            style="@style/setting_rl_style"
+            android:layout_below="@+id/setting_version_rl">
+
+            <ImageView
+                android:id="@+id/setting_about_iv"
+                style="@style/setting_iv_style"
+                android:src="@mipmap/about"></ImageView>
+
+            <TextView
+                android:id="@+id/setting_about_tv"
+                style="@style/setting_tv_style"
+                android:layout_toRightOf="@+id/setting_about_iv"
+                android:text="@string/setting_about"></TextView>
+
+            <Button
+                android:id="@+id/setting_about_et"
+                style="@style/setting_bt_style"
+                android:layout_toRightOf="@+id/setting_about_tv"
+                android:drawableRight="@mipmap/toright"></Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_logout_rl"
+            style="@style/setting_rl_style"
+            android:layout_below="@+id/setting_about_rl"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <Button
+                android:id="@+id/setting_logout_et"
+                style="@style/setting_bt_style"
+                android:gravity="center"
+                android:text="@string/setting_logout"
+                android:textColor="@color/color_ff0033"></Button>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_rl"
+            style="@style/setting_fl_style"
+            android:layout_below="@+id/setting_address_rl">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/setting_address_fl_tv"
+                    style="@style/setting_fl_tv_style"
+                    android:text="@string/setting_address_tips"></TextView>
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/setting_rv"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/setting_address_fl_tv"-->
+<!--                    android:layout_marginTop="32dp"></androidx.recyclerview.widget.RecyclerView>-->
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/setting_address_fl_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <RadioGroup
+                            android:id="@+id/setting_rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/dp_10">
+                        </RadioGroup>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

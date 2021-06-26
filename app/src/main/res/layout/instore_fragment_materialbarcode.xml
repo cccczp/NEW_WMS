@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_BBBBBB">
+
+    <RelativeLayout
+        android:id="@+id/instore_fragment_loc_rl"
+        style="@style/item_instore_fragment_location_rl_style">
+
+        <TextView
+            android:id="@+id/instore_fragment_loc_tv"
+            style="@style/item_instore_fragement_location_tv"
+            android:text="@string/item_instore_location_code"></TextView>
+
+        <EditText
+            android:id="@+id/instore_fragment_loc_et"
+            style="@style/item_instore_fragment_location_et_style"
+            android:layout_toRightOf="@+id/instore_fragment_loc_tv"
+            android:hint="@string/item_instore_location_code_hint"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/instore_fragment_tray_rl"
+        style="@style/item_instore_fragment_location_rl_style"
+        android:layout_below="@+id/instore_fragment_loc_rl">
+
+        <TextView
+            android:id="@+id/instore_fragment_tray_tv"
+            style="@style/item_instore_fragement_location_tv"
+            android:text="@string/item_instore_tray_code"></TextView>
+
+        <EditText
+            android:id="@+id/instore_fragment_tray_et"
+            style="@style/item_instore_fragment_location_et_style"
+            android:layout_toRightOf="@+id/instore_fragment_tray_tv"
+            android:hint="@string/item_instore_location_code_hint"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/instore_fragment_materialBarcode_rl"
+        style="@style/item_instore_fragment_location_rl_style"
+        android:layout_below="@id/instore_fragment_tray_rl">
+
+        <TextView
+            android:id="@+id/instore_fragment_materialBarcode_tv"
+            style="@style/item_instore_fragement_location_tv"
+            android:text="@string/item_instore_material_barcode"></TextView>
+
+        <EditText
+            android:id="@+id/instore_fragment_materialBarcode_et"
+            style="@style/item_instore_fragment_location_et_style"
+            android:layout_toRightOf="@+id/instore_fragment_materialBarcode_tv"
+            android:hint="@string/item_instore_material_barcode_hint"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/instore_fragment_tip_rl"
+        style="@style/item_instore_fragment_location_rl_style"
+        android:layout_below="@id/instore_fragment_materialBarcode_rl">
+
+        <TextView
+            android:id="@+id/instore_fragment_order_qty_tv"
+            style="@style/item_instore_fragement_location_tv"
+            android:layout_centerInParent="true"
+            android:text="@string/item_instore_order_qty"></TextView>
+        <TextView
+            android:id="@+id/instore_fragment_order_qty_tv_demo"
+            style="@style/item_instore_fragement_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/instore_fragment_order_qty_tv"
+            android:text="@string/instore_total_count_demo"></TextView>
+
+        <TextView
+            android:id="@+id/instore_fragment_scan_qty_tv"
+            style="@style/item_instore_fragement_location_tv"
+            android:layout_toLeftOf="@+id/instore_fragment_scan_qty_tv_demo"
+            android:text="@string/item_instore_scan_qty"></TextView>
+        <TextView
+            android:id="@+id/instore_fragment_scan_qty_tv_demo"
+            style="@style/item_instore_fragement_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/instore_total_count_demo"></TextView>
+    </RelativeLayout>
+    <com.bin.david.form.core.SmartTable
+        android:id="@+id/table"
+        android:layout_below="@+id/instore_fragment_tip_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.bin.david.form.core.SmartTable>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/login_btn"
+            android:text="@string/confirm"
+            style="@style/confirm_btn_style"></Button>
+    </FrameLayout>
+
+
+</RelativeLayout>

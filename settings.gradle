@@ -1,0 +1,2 @@
+include ':app', ':mvp', ':http', ':task'
+rootProject.name='WMS'
